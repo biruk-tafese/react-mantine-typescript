@@ -1,0 +1,49 @@
+import { Button, Paper, Text, TextInput } from '@mantine/core';
+import { IconBrandMantine } from '@tabler/icons-react';
+
+
+export default function Navbar() {
+  return (
+    <>
+    <div> 
+     <Button 
+      renderRoot={(props) => (
+         <a href='https://mantine.dev/' {...props} target='_blank' />
+      )}
+     >
+      <IconBrandMantine size={18}  stroke={1.5} color="var(--mantine-color-blue-filled)"/>
+       
+     </Button>
+    <div>
+    <Text fz="md" lh="md" style={{paddingTop:"30px"}}>
+      Paras is an orange, insectoid Pokémon that resembles the nymph stage of a cicada. Its ovoid
+      body is segmented, and it has three pairs of legs. The foremost pair of legs is the largest
+      and has sharp claws at the tips. There are five specks on its forehead and three teeth on
+      either side of its mouth. It has circular eyes with large pseudopupils.
+    </Text>ss
+    </div>
+
+
+     <div>
+     <form>
+        <TextInput label="Search" placeholder="Search for a Pokémon" style={{marginTop:"20px"}} />
+        <TextInput label="Search" placeholder="Search for a Pokémon" style={{marginTop:"20px"}} />
+        <TextInput label="First Name" mt="md" placeholder="John" />
+     </form>
+     </div>
+
+     <Paper p="xl">
+     Paras is an orange, insectoid Pokémon that resembles the nymph stage of a cicada. Its ovoid
+      body is segmented, and it has three pairs of legs. The foremost pair of legs is the largest
+      and has sharp claws at the tips. There are five specks on its forehead and three teeth on
+      either side of its mouth. It has circular eyes with large pseudopupils.
+     </Paper>
+     <Button style={{ flex: 1}}> Small Button</Button>
+
+
+    </div>
+    
+   
+    </>
+  );
+}

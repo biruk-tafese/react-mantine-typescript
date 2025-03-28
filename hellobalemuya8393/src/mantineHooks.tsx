@@ -1,9 +1,12 @@
+import { ModalsProvider } from "@mantine/modals";
 import CustomAspectRatio from "./hooks/aspectration";
 import FileUploadHook from "./hooks/fileuphook";
 import FullScreenHook from "./hooks/fullscreen";
 import Xgrid from "./hooks/gird";
+import ModalDemo from "./hooks/modal";
 import Notify from "./hooks/notify";
 import OS from "./hooks/os";
+import DemoScrollArea from "./hooks/scrollArea";
 import Search from "./hooks/search";
 import Timing from "./hooks/timing";
 import UseFocus from "./hooks/useFocus";
@@ -25,6 +28,10 @@ export default function MantineHooks() {
         <Xgrid />
         <div style={{ paddingTop: '20px', paddingRight: '20px'}}>
         <Notify />
+        <DemoScrollArea />
+        <ModalsProvider>
+        <ModalDemo />
+      </ModalsProvider>
         </div>
      </div>
     </>

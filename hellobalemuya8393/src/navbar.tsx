@@ -1,19 +1,11 @@
 import { Button, Paper, Text, TextInput } from '@mantine/core';
-import { IconBrandMantine } from '@tabler/icons-react';
 
 
 export default function Navbar() {
   return (
     <>
     <div> 
-     <Button 
-      renderRoot={(props) => (
-         <a href='https://mantine.dev/' {...props} target='_blank' />
-      )}
-     >
-      <IconBrandMantine size={18}  stroke={1.5} color="var(--mantine-color-blue-filled)"/>
-       
-     </Button>
+     
     <div>
     <Text fz="md" lh="md" style={{paddingTop:"30px"}}>
       Paras is an orange, insectoid Pokémon that resembles the nymph stage of a cicada. Its ovoid
